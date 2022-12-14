@@ -19,11 +19,21 @@
 <div class="" style="width:100;height:100;background-color:#03b1fc;background-image:linear-gradient(#03b1fc, #0339fc); border-radius: 10px; box-shadow: 0px 0px 5px 5px black;">
 <p>&nbsp;</p>
 <p align="center">
-<canvas width="400" height="400" id="game"></canvas>
+<canvas width="600" height="400" id="game"></canvas>
 </p>
 
 <script>
-  
+//draw ship
+var c = document.getElementById("game");
+var ship = c.getContext("2d");
+ship.fillRect(30, 25, 50, 50);
+
+//draw lines
+var c = document.getElementById("game");
+var line = c.getContext("2d");
+line.fillRect(0, 100, 600, 1);
+line.fillRect(0, 200, 600, 1);
+line.fillRect(0, 300, 600, 1);
 </script>
 
 <p align="center">
