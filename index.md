@@ -34,6 +34,20 @@ var line = c.getContext("2d");
 line.fillRect(0, 100, 600, 1);
 line.fillRect(0, 200, 600, 1);
 line.fillRect(0, 300, 600, 1);
+
+// keyboard events
+document.addEventListener('keydown', function(e) {
+
+  // up arrow key
+  if (e.which === 38) {
+    alert("up arrow");
+  }
+  // down arrow key
+  else if (e.which === 40) {
+    alert("down arrow");
+  }
+});
+  
 </script>
 
 <p align="center">
