@@ -23,14 +23,13 @@
 </p>
 
 <script>
-const canvas = document.getElementById('game');
-const context = canvas.getContext('2d');
+var canvas = document.getElementById('game');
+var context = canvas.getContext('2d');
 var shipY = 225;
 
 // game loop
 function loop() {
   requestAnimationFrame(loop);
-  
   if (++count < 4) {
     return;
   }
@@ -60,14 +59,12 @@ function loop() {
   else if (e.which === 40) {
   	var shipY = shipY + 100;
   }
-});
 
-}
+});
 
 // start the game
 requestAnimationFrame(loop);
 </script>
-
 <p align="center">
 <button style="background-color: transparent; border-radius: 100px; border: 0; cursor: pointer; box-shadow: 0px 0px 5px 5px #03b1fc; width: 50px; height: 50px; padding: 0px 0px;" onclick="location.href='https://thingy937.github.io/'"><img src="https://raw.githubusercontent.com/thingy937/Snake-game-/master/home_circle_icon_137496.png" width="50" height="50"></button>
 </p>
