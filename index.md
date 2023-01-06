@@ -15,13 +15,12 @@
     border: 8px solid black;
   }
   </style>
-    
+<body>    
 <div class="" style="width:100;height:100;background-color:#03b1fc;background-image:linear-gradient(#03b1fc, #0339fc); border-radius: 10px; box-shadow: 0px 0px 5px 5px black;">
 <p>&nbsp;</p>
 <p align="center">
 <canvas width="600" height="400" id="game"></canvas>
 </p>
-
 <script>
 var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
@@ -35,14 +34,15 @@ function loop() {
   }
   shipY = 225;
   context.clearRect(0,0,canvas.width,canvas.height);
+}
   
   //draw ship
-  var c = document.getElementById("game");
+  var canvas = document.getElementById("game");
   var ship = c.getContext("2d");
   ship.fillRect(30, shipY, 50, 50);
 
   //draw lines
-  var c = document.getElementById("game");
+  var canvas = document.getElementById("game");
   var line = c.getContext("2d");
   line.fillRect(0, 100, 600, 1);
   line.fillRect(0, 200, 600, 1);
@@ -59,7 +59,6 @@ function loop() {
   else if (e.which === 40) {
   	var shipY = shipY + 100;
   }
-
 });
 
 // start the game
