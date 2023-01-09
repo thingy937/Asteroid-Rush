@@ -35,14 +35,14 @@ function loop() {
   //draw ship
   var canvas = document.getElementById("game");
   var ship = c.getContext("2d");
-  ship.fillRect(30, shipY, 50, 50);
+  context.fillRect(30, shipY, 50, 50);
 
   //draw lines
   var canvas = document.getElementById("game");
   var line = c.getContext("2d");
-  line.fillRect(0, 100, 600, 1);
-  line.fillRect(0, 200, 600, 1);
-  line.fillRect(0, 300, 600, 1);
+  context.fillRect(0, 100, 600, 1);
+  context.fillRect(0, 200, 600, 1);
+  context.fillRect(0, 300, 600, 1);
   
 });
 
