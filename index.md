@@ -30,22 +30,20 @@ var shipY = 225;
 function loop() {
   requestAnimationFrame(loop);
   shipY = 225;
-  context.clearRect(0,0,canvas.width,canvas.height);
   
   //draw ship
   var canvas = document.getElementById("game");
   var ship = c.getContext("2d");
-  context.fillRect(30, shipY, 50, 50);
+  ship.fillRect(30, shipY, 50, 50);
 
   //draw lines
   var canvas = document.getElementById("game");
   var line = c.getContext("2d");
-  context.fillRect(0, 100, 600, 1);
-  context.fillRect(0, 200, 600, 1);
-  context.fillRect(0, 300, 600, 1);
+  line.fillRect(0, 100, 600, 1);
+  line.fillRect(0, 200, 600, 1);
+  line.fillRect(0, 300, 600, 1);
   
-});
-
+}
 
 // keyboard events
 document.addEventListener('keydown', function(e) {
