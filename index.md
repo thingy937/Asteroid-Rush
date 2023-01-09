@@ -29,12 +29,8 @@ var shipY = 225;
 // game loop
 function loop() {
   requestAnimationFrame(loop);
-  if (++count < 4) {
-    return;
-  }
   shipY = 225;
   context.clearRect(0,0,canvas.width,canvas.height);
-}
   
   //draw ship
   var canvas = document.getElementById("game");
@@ -48,8 +44,11 @@ function loop() {
   line.fillRect(0, 200, 600, 1);
   line.fillRect(0, 300, 600, 1);
   
-  // keyboard events
-  document.addEventListener('keydown', function(e) {
+});
+
+
+// keyboard events
+document.addEventListener('keydown', function(e) {
 
   // up arrow key
   if (e.which === 38) {
