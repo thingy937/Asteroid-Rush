@@ -63,7 +63,8 @@ document.addEventListener('keydown', function(e) {
 requestAnimationFrame(loop);
 </script>
 <p align="center">
-<button style="background-color: transparent; border-radius: 100px; border: 0; cursor: pointer; box-shadow: 0px 0px 5px 5px #03b1fc; width: 50px; height: 50px; padding: 0px 0px;" onclick="location.href='https://thingy937.github.io/'"><img src="https://raw.githubusercontent.com/thingy937/Snake-game-/master/home_circle_icon_137496.png" width="50" height="50"></button>
+<button title="Go back" style="background-color: transparent; border-radius: 100px; border: 0; cursor: pointer; box-shadow: 0px 0px 5px 5px #03b1fc; width: 50px; height: 50px; padding: 0px 0px;" onclick="history.back()"><img src="https://raw.githubusercontent.com/thingy937/thingy937.github.io/master/kisspng-arrow-computer-icons-encapsulated-postscript-butto-back-icon-5b160a5fdee165.5756415015281711039129(1).png" width="50" height="50"></button>
+<button title="Home" style="background-color: transparent; border-radius: 100px; border: 0; cursor: pointer; box-shadow: 0px 0px 5px 5px #03b1fc; width: 50px; height: 50px; padding: 0px 0px;" onclick="location.href='https://thingy937.github.io/'"><img src="https://raw.githubusercontent.com/thingy937/Snake-game-/master/home_circle_icon_137496.png" width="50" height="50"></button>
 </p>
 <p>&nbsp;</p>
 </div>
